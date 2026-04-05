@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --color-vault-cream: #f4f0e8;
+  --color-vault-lime: #b7f23d;
+  --color-vault-orange: #ff8d4f;
+  --color-vault-sun: #ffd465;
+  --color-vault-ink: #1b130f;
+  --color-vault-soft: #5f4a3f;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  @apply m-0 min-h-screen bg-vault-cream font-sans text-vault-ink;
+  background-image:
+    radial-gradient(circle at 14% 18%, rgba(255, 255, 255, 0.6), transparent 36%),
+    radial-gradient(circle at 86% 14%, rgba(255, 141, 79, 0.26), transparent 34%),
+    linear-gradient(140deg, #f8e2c0 0%, #f8f0dc 48%, #dcedc4 100%);
+  background-attachment: fixed;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.neo-card {
+  @apply border-[3px] border-vault-ink bg-vault-cream shadow-[7px_7px_0_#5f4a3f];
+}
+
+.neo-button {
+  @apply inline-flex items-center gap-2 border-[3px] border-vault-ink px-4 py-2 font-extrabold uppercase tracking-wide transition duration-200 hover:-translate-x-[1px] hover:-translate-y-[1px];
+}
+
+.neo-grid-bg {
+  background-image:
+    linear-gradient(rgba(27, 19, 15, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(27, 19, 15, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
