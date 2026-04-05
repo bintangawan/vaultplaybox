@@ -11,7 +11,7 @@ function AdvantagesSection() {
             <Sparkles size={18} /> Plug & Play
           </h3>
           <p className="mt-2 font-semibold">
-            Unit datang dalam kondisi siap pakai. Colok ke layar, langsung main.
+            Tinggal colok ke listrik, nyalakan, dan langsung main tanpa ribet.
           </p>
         </article>
 
